@@ -410,36 +410,36 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
     );
   }
 
-  Widget _buildProgressItem(String label, double progress, Color color) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              label,
-              style: const TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.w500,
-                color: Colors.black87,
-              ),
-            ),
-            Text(
-              '${(progress * 100).round()}%',
-              style: TextStyle(fontSize: 12, color: Colors.grey[600]),
-            ),
-          ],
-        ),
-        const SizedBox(height: 4),
-        LinearProgressIndicator(
-          value: progress,
-          backgroundColor: Colors.grey[200],
-          valueColor: AlwaysStoppedAnimation<Color>(color),
-        ),
-      ],
-    );
-  }
+  // Widget _buildProgressItem(String label, double progress, Color color) {
+  //   return Column(
+  //     crossAxisAlignment: CrossAxisAlignment.start,
+  //     children: [
+  //       Row(
+  //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  //         children: [
+  //           Text(
+  //             label,
+  //             style: const TextStyle(
+  //               fontSize: 14,
+  //               fontWeight: FontWeight.w500,
+  //               color: Colors.black87,
+  //             ),
+  //           ),
+  //           Text(
+  //             '${(progress * 100).round()}%',
+  //             style: TextStyle(fontSize: 12, color: Colors.grey[600]),
+  //           ),
+  //         ],
+  //       ),
+  //       const SizedBox(height: 4),
+  //       LinearProgressIndicator(
+  //         value: progress,
+  //         backgroundColor: Colors.grey[200],
+  //         valueColor: AlwaysStoppedAnimation<Color>(color),
+  //       ),
+  //     ],
+  //   );
+  // }
 
   Widget _buildQuickTips() {
     return Column(
