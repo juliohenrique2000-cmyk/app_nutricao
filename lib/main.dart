@@ -39,7 +39,7 @@ class _LoginScreenState extends State<LoginScreen> {
       // Navegar para a próxima tela ou mostrar sucesso
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => FitnessHomePage()),
+        MaterialPageRoute(builder: (context) => const FitnessHomePage()),
       );
     } else {
       ScaffoldMessenger.of(
